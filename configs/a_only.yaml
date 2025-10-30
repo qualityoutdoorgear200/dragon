@@ -1,0 +1,15 @@
+
+# A-only resonator (simple frequency-based neuron)
+resonator:
+  n_freq: 48
+  use_threshold_maps: true
+rails: {use_B: false, use_C: false}
+extras: {use_phase_gated_attn: false, use_ffn_refine: false, refine_steps: 1}
+fastweights: {use_fastweights: false}
+ei: {use_EI: false}
+reentry: {mode: threshold_only, additive_nudge: 0.0}
+train:
+  steps: 400
+  batch_size: 64
+  dataset: text
+  save_dir: runs/a_only

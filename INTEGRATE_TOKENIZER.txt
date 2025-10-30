@@ -1,0 +1,25 @@
+
+In dragonwave/train.py:
+  - Add:
+      from .tokenize import load_tokenizer
+      from .dataset_token import build_token_dataset_from_file, collate as collate_tok
+  - Where you build the dataset:
+      if getattr(cfg.train, "tokenizer_path", None):
+          tok = load_tokenizer(cfg.train.tokenizer_path)
+          ds = build_token_dataset_from_file(cfg.train.text_path or "data/mix_lite_train.txt",
+                                             tokenizer=tok, seq_len=cfg.train.seq_len, num_samples=2048)
+          vocab_size = tok.get_vocab_size()
+          collate_fn = collate_tok
+      else:
+          # existing char-level path
+          ...
+          vocab_size = len(stoi)
+          collate_fn = collate
+      loader = DataLoader(ds, batch_size=cfg.train.batch_size, shuffle=True, collate_fn=collate_fn)
+
+  - When constructing StreamLM:
+      model = StreamLM(vocab_size=vocab_size, ...)
+
+In dragonwave/eval.py:
+  - Mirror the same tokenizer detection and dataset build using build_token_dataset_from_file
+  - Ensure vocab_size passed to StreamLM equals tokenizer vocab size

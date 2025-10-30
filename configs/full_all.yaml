@@ -1,0 +1,21 @@
+
+# Everything on (stress test; tune if unstable)
+rails: {use_B: true, use_C: true}
+extras: {use_phase_gated_attn: true, use_ffn_refine: true, refine_steps: 2}
+fastweights: {use_fastweights: true, rank: 4, eta: 1.0e-3, gamma: 0.98, event: "B"}
+ei: {use_EI: true, norm_strength: 0.2, phase_corr_scale: 0.02}
+reentry: {mode: threshold_phase, additive_nudge: 0.01}
+resonator:
+  n_freq: 64
+  use_retention_maps: true
+  use_continuous_atoms: true
+  atoms_per_filter: 3
+gate:
+  rho_B: 0.25
+  rho_C: 0.25
+  alpha: 5.0
+  mix: {amp: 1.0, novelty: 0.5, instability: 0.5, residual: 0.0}
+modulator: {use_modulator: true, smoothing: 0.1}
+timing: {loss: softDP, lambda_rate: 1.0e-3, lambda_entropy: 1.0e-3, lambda_coverage: 1.0e-2}
+dk: {overconfidence: 2.0e-3, disagreement: 1.0e-3}
+train: {steps: 400, dataset: text, save_dir: runs/full_all}

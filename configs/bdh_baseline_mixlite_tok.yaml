@@ -1,0 +1,42 @@
+attention:
+  d_head: 160
+  d_model: 160
+  n_heads: 1
+  n_layers: 6
+dk:
+  disagreement: 0.0
+  overconfidence: 0.0
+ei:
+  use_EI: false
+extras:
+  refine_steps: 1
+  use_ffn_refine: false
+  use_phase_gated_attn: false
+fastweights:
+  use_fastweights: false
+modulator:
+  use_modulator: false
+rails:
+  use_B: false
+  use_C: false
+reentry:
+  additive_nudge: 0.0
+  mode: threshold_only
+resonator:
+  n_freq: 0
+  use_threshold_maps: false
+timing:
+  lambda_coverage: 0.005
+  lambda_entropy: 0.001
+  lambda_rate: 0.001
+  loss: softmin_cov
+train:
+  batch_size: 64
+  dataset: text
+  device: auto
+  max_vram_gb: 12
+  save_dir: runs/bdh_baseline_mixlite_tok
+  seed: 42
+  steps: 1500
+  text_path: data/mix_lite_train.txt
+  tokenizer_path: data/tokenizer_bpe50k.json

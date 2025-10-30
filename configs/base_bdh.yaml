@@ -1,0 +1,25 @@
+
+# BDH-only baseline (resonator path disabled via n_freq: 0)
+attention:
+  d_model: 256
+  n_layers: 2
+  n_heads: 4
+  d_head: 64
+resonator:
+  n_freq: 0
+  use_threshold_maps: false
+rails: {use_B: false, use_C: false}
+extras: {use_phase_gated_attn: false, use_ffn_refine: false, refine_steps: 1}
+fastweights: {use_fastweights: false}
+ei: {use_EI: false}
+reentry: {mode: threshold_only, additive_nudge: 0.0}
+timing: {loss: softDP, lambda_rate: 1.0e-3, lambda_entropy: 1.0e-3, lambda_coverage: 1.0e-2}
+dk: {overconfidence: 0.0, disagreement: 0.0}
+modulator: {use_modulator: false}
+train:
+  steps: 200
+  batch_size: 64
+  device: auto
+  seed: 42
+  dataset: text
+  save_dir: runs/bdh

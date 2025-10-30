@@ -1,0 +1,22 @@
+ei:
+  use_EI: false
+extras:
+  refine_steps: 1
+  use_ffn_refine: false
+  use_phase_gated_attn: false
+fastweights:
+  use_fastweights: false
+rails:
+  use_B: false
+  use_C: false
+reentry:
+  additive_nudge: 0.0
+  mode: threshold_only
+resonator:
+  n_freq: 48
+  use_threshold_maps: true
+train:
+  batch_size: 64
+  dataset: synthetic_copy
+  save_dir: runs/a_only_synthetic_copy
+  steps: 400

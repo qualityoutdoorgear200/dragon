@@ -1,0 +1,40 @@
+attention:
+  d_head: 512
+  d_model: 512
+  n_heads: 1
+  n_layers: 6
+dk:
+  disagreement: 0.0
+  overconfidence: 0.0
+ei:
+  use_EI: false
+extras:
+  refine_steps: 1
+  use_ffn_refine: false
+  use_phase_gated_attn: false
+fastweights:
+  use_fastweights: false
+modulator:
+  use_modulator: false
+rails:
+  use_B: false
+  use_C: false
+reentry:
+  additive_nudge: 0.0
+  mode: threshold_only
+resonator:
+  n_freq: 0
+  use_threshold_maps: false
+timing:
+  lambda_coverage: 0.01
+  lambda_entropy: 0.001
+  lambda_rate: 0.001
+  loss: softDP
+train:
+  batch_size: 64
+  dataset: text
+  device: auto
+  max_vram_gb: 6
+  save_dir: runs/bdh_baseline_200
+  seed: 42
+  steps: 200

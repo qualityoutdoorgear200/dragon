@@ -1,0 +1,197 @@
+[
+  {
+    "path": "DATASETS.md",
+    "sha256": "ca98c3a5582533b7ab926572b7ebc793ca117f7b7433567ebb793a63f7c82c8c",
+    "bytes": 2937
+  },
+  {
+    "path": "FILE_MANIFEST.json",
+    "sha256": "1988db85f5078abd9bbd2f9f5bfad8506bf781d01e73047bbca37dd8fa419cff",
+    "bytes": 5569
+  },
+  {
+    "path": "README.md",
+    "sha256": "76c78ddf305e6546b7509a030114530f4df31d4f8c08d9203de80b47da719e04",
+    "bytes": 3596
+  },
+  {
+    "path": "ROADMAP.md",
+    "sha256": "14da41689883b744be262d1b9ed0412315640302624094cf6889fa74a87afbb1",
+    "bytes": 3403
+  },
+  {
+    "path": "configs/scale_300m_bdh.yaml",
+    "sha256": "8d31f6fc4c2e7a526130a270716f768742da2d5034dbfd30ee52b5a17e5f0dc9",
+    "bytes": 785
+  },
+  {
+    "path": "configs/scale_300m_a_only.yaml",
+    "sha256": "b78e1fdf386e58eadebabb2571cc491c8268ed77e05b8bd55fa834953712d34b",
+    "bytes": 787
+  },
+  {
+    "path": "configs/scale_300m_full.yaml",
+    "sha256": "dd2eab4a5dc430bb1d18181fbf162f18b7b3a54d0de44f35d2a48f59d77b3a05",
+    "bytes": 779
+  },
+  {
+    "path": "configs/base_bdh.yaml",
+    "sha256": "b036dddd3261f6b1767105e199f6cc717489fa9befe52a3767d4060b9f734910",
+    "bytes": 654
+  },
+  {
+    "path": "configs/a_only.yaml",
+    "sha256": "ce137583e2084cc730d8a1b3b55408f544bb608944c384a6d144f3fe74dc0902",
+    "bytes": 386
+  },
+  {
+    "path": "configs/a_b.yaml",
+    "sha256": "2568ffa7f301e2e7ed0b79d22b776ed7e242525d72ed6bbfb58e949fabd59d75",
+    "bytes": 255
+  },
+  {
+    "path": "configs/a_c.yaml",
+    "sha256": "ce13eb1dca9726466a140c47ee8685a4b6532fe12b3efd138ea8cf79e6ce8919",
+    "bytes": 254
+  },
+  {
+    "path": "configs/a_b_c_ei.yaml",
+    "sha256": "5d4d17b9842e03c867e5e6706cdc53cc0a9ee4ec9b26bb3dab86d331881b317b",
+    "bytes": 343
+  },
+  {
+    "path": "configs/full_all.yaml",
+    "sha256": "265a09227ea902c2d1d63bbe0976f560d10533965a2140fe8f22211633f8dcce",
+    "bytes": 828
+  },
+  {
+    "path": "configs/datasets/chinchilla_mixture_0p3b.yaml",
+    "sha256": "40ecac1263bb7713cb6bab163343c074fabf4b2e47e09387615ed37192c20d63",
+    "bytes": 888
+  },
+  {
+    "path": "configs/grids/small_grid.yaml",
+    "sha256": "a118d7515453ffda01eb7d9308bfd3bb087daae162b05e7f2bb9ad0871047650",
+    "bytes": 201
+  },
+  {
+    "path": "scripts/compute_steps.py",
+    "sha256": "c49331ca21bfb7675c72b3a3ed509e69774a4b4527fb7435f76100ef8e5e3e23",
+    "bytes": 810
+  },
+  {
+    "path": "scripts/poc_minimal.sh",
+    "sha256": "43c8495e6a616f2a5a0b28b6847441fc8873b8df77c9cc9b90c9aed9e2735354",
+    "bytes": 667
+  },
+  {
+    "path": "scripts/run_ablation_grid.sh",
+    "sha256": "39d482229f9b82b3cb7619de95f357158803caa688f448914b30a8716e10982e",
+    "bytes": 364
+  },
+  {
+    "path": "dragonwave/config.py",
+    "sha256": "c1c36b114e0fc9cbbe6f78624cb6bd171b0bad0da05e633592ec3b9d9fbfe55d",
+    "bytes": 3272
+  },
+  {
+    "path": "dragonwave/utils.py",
+    "sha256": "0a754a08d89ab0f46a28ea67d6a02bdcc1006de24a6d3a24feeae3a5b69fa877",
+    "bytes": 771
+  },
+  {
+    "path": "dragonwave/positives.py",
+    "sha256": "c0d1ce199975f8abfc1f0b4285551b9e2fdf7b40a783d5ae7e5ae61dbe249467",
+    "bytes": 176
+  },
+  {
+    "path": "dragonwave/linear_attention.py",
+    "sha256": "f58408d0f1eb128080ef07895cb78523826aaaa983ac19cf3fff37056c836694",
+    "bytes": 1813
+  },
+  {
+    "path": "dragonwave/expressivity.py",
+    "sha256": "147c90c6cfc04a10a7a7d69c13a400edf484fe6f11d859cdb46c401b7d043ba3",
+    "bytes": 1009
+  },
+  {
+    "path": "dragonwave/gates.py",
+    "sha256": "0117a3b0f32a04bfbae72e2bc84d474a578ff2d50d9f436a448d1b62ecda0fb8",
+    "bytes": 655
+  },
+  {
+    "path": "dragonwave/fastweights.py",
+    "sha256": "4229919883c300a3859c8765739858988a81ee327fef82e17e928e18a9d752ff",
+    "bytes": 904
+  },
+  {
+    "path": "dragonwave/resonator.py",
+    "sha256": "459fa812bb889c94837bc557f54670c1f3f0095d53aaf1e4b13c6a1556b046c7",
+    "bytes": 7813
+  },
+  {
+    "path": "dragonwave/modulator.py",
+    "sha256": "45a37fef5541bae1be12a743c8a46be44ee85285c244ffeec7b1f9b0677f8d2d",
+    "bytes": 775
+  },
+  {
+    "path": "dragonwave/layer.py",
+    "sha256": "c7f72ff50874960f16d5a68cbd76071444c6cba6f3a0e1e6d53cd8577fe83888",
+    "bytes": 5217
+  },
+  {
+    "path": "dragonwave/model.py",
+    "sha256": "c9e081f3724f1d72ee8f1b0bb3d17db7c38955b5df55aab85ce40b5f7b223d07",
+    "bytes": 2971
+  },
+  {
+    "path": "dragonwave/synthetic_tasks.py",
+    "sha256": "bcf06e620d4dfa166c32b6c08a75cc921aca4a4eb51f5f3241900e41e3cc411a",
+    "bytes": 2534
+  },
+  {
+    "path": "dragonwave/dataset.py",
+    "sha256": "8a09b8cf18ed43f0559ee5cc0162ca50cec90f33b8f35218e924e20af41e59d8",
+    "bytes": 1249
+  },
+  {
+    "path": "dragonwave/metrics.py",
+    "sha256": "ca2d7a15a91406460833951053f4c91053421ec8af9cc7a5c5de879c91617a01",
+    "bytes": 1320
+  },
+  {
+    "path": "dragonwave/results_logger.py",
+    "sha256": "bb3c094fe45b3f51e002d22d66e08d3c740593240bb7bf5aeebbff082e1c9f99",
+    "bytes": 796
+  },
+  {
+    "path": "dragonwave/losses.py",
+    "sha256": "48a98ffa5988fa3dbd9a3db05054b45b34afff07f062d82cc691642617e8624b",
+    "bytes": 3022
+  },
+  {
+    "path": "dragonwave/eval.py",
+    "sha256": "0540d0cc3a7bbf8af80fcebd64bcd17033e87124c703cc4f43ab61295bfb222e",
+    "bytes": 3497
+  },
+  {
+    "path": "dragonwave/run_ablate.py",
+    "sha256": "97fbf42e19ea867c6c20e33011985a451be4b5649842bf4a654cd788188a650d",
+    "bytes": 1098
+  },
+  {
+    "path": "dragonwave/train.py",
+    "sha256": "6219633a32b53a6cd921837581d4f48093d0323b6793347facba9be86c78b434",
+    "bytes": 5280
+  },
+  {
+    "path": "dragonwave/__init__.py",
+    "sha256": "c88f03446ef485bda34c9b714a64c4979af5324e8ae8e7705abe7c256aacbec6",
+    "bytes": 28
+  },
+  {
+    "path": "data/heldout.txt",
+    "sha256": "bc03da598a64392958928af4a3386fc983290f34d78332bfd94ffb923e82e3d9",
+    "bytes": 5248
+  }
+]

@@ -1,0 +1,32 @@
+
+# Target: ~7.5B tokens (Chinchilla-ish for 0.3B params)
+target_tokens: 7500000000
+sequence_length: 2048
+datasets:
+  - id: HuggingFaceFW/fineweb-edu
+    weight: 0.50
+    notes: "Educational slice; higher quality web text"
+  - id: armanc/scientific_papers
+    config: arxiv
+    weight: 0.10
+    notes: "ArXiv scientific papers"
+  - id: armanc/scientific_papers
+    config: pubmed
+    weight: 0.05
+    notes: "PubMed OA articles"
+  - id: open-web-math/open-web-math
+    weight: 0.10
+    notes: "Math-heavy web text"
+  - id: wikipedia
+    config: 20220301.en
+    weight: 0.05
+    notes: "Encyclopedic backbone"
+  - id: pile-of-law/pile-of-law
+    weight: 0.05
+    notes: "Legal corpora"
+  - id: bigcode/the-stack-v2-dedup
+    weight: 0.10
+    notes: "Permissively-licensed code; respect licensing"
+  - id: common-pile/stackexchange
+    weight: 0.05
+    notes: "Q&A (filter to math/cs tags)"

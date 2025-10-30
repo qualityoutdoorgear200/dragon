@@ -1,0 +1,6 @@
+
+# Add B rail (salient), EI threshold modulation
+rails: {use_B: true, use_C: false}
+ei: {use_EI: true, norm_strength: 0.2, phase_corr_scale: 0.02}
+reentry: {mode: threshold_only, additive_nudge: 0.0}
+train: {steps: 400, dataset: text, save_dir: runs/a_b}

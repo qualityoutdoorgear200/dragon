@@ -1,0 +1,9 @@
+
+# Small config grid (swap configs via env var CFG)
+CFG:
+  - configs/base_bdh.yaml
+  - configs/a_only.yaml
+  - configs/a_b.yaml
+  - configs/a_c.yaml
+  - configs/a_b_c_ei.yaml
+  - configs/full_all.yaml

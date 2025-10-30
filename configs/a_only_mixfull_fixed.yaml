@@ -1,0 +1,38 @@
+attention:
+  d_head: 160
+  d_model: 160
+  n_heads: 1
+  n_layers: 6
+ei:
+  use_EI: false
+extras:
+  refine_steps: 1
+  use_ffn_refine: false
+  use_phase_gated_attn: false
+fastweights:
+  use_fastweights: false
+rails:
+  use_B: false
+  use_C: false
+reentry:
+  additive_nudge: 0.0
+  mode: threshold_only
+resonator:
+  atoms_per_filter: 2
+  n_freq: 48
+  use_continuous_atoms: false
+  use_threshold_maps: true
+timing:
+  lambda_coverage: 0.005
+  loss: softmin_cov
+train:
+  batch_size: 128
+  checkpoint_interval: 500
+  dataset: text
+  device: auto
+  max_vram_gb: 8
+  micro_batch_size: 16
+  save_dir: runs/a_only_mixfull_fixed
+  steps: 31200
+  text_path: data/mix_full_train.txt
+  tokenizer_path: data/tokenizer_mixfull_bpe50k.json

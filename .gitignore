@@ -1,0 +1,30 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+.env/
+venv/
+env/
+
+# Generated artifacts
+runs/
+logs/
+*.log
+*.pt
+*.ckpt
+
+# Large local datasets (re-create or download separately)
+data/mix_full_train.txt
+data/mix_full_train.bin
+data/mix_full_train.idx
+data/mix_full_valid.txt
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+.tmp.driveupload/
+

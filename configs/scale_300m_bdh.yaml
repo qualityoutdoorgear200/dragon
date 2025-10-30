@@ -1,0 +1,21 @@
+
+# BDH-only 300M baseline: ~300M parameters configuration
+attention:
+  d_model: 1024
+  n_layers: 20
+  n_heads: 16
+  d_head: 64
+resonator:
+  n_freq: 0
+  use_retention_maps: true
+  use_threshold_maps: true
+  use_continuous_atoms: true
+  atoms_per_filter: 3
+rails: {use_B: false, use_C: false}
+extras: {use_phase_gated_attn: false, use_ffn_refine: false, refine_steps: 1 }
+ei: {use_EI: false, norm_strength: 0.2, phase_corr_scale: 0.02}
+reentry: {mode: threshold_only, additive_nudge: 0.005}
+fastweights: {use_fastweights: false}
+timing: {loss: softDP, lambda_rate: 1.0e-3, lambda_entropy: 1.0e-3, lambda_coverage: 1.0e-2}
+dk: {overconfidence: 2.0e-3, disagreement: 1.0e-3}
+train: {steps: 15000, batch_size: 64, seq_len: 2048, device: auto, dataset: text, save_dir: runs/scale_300m_bdh }

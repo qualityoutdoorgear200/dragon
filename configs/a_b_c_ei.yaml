@@ -1,0 +1,19 @@
+ei:
+  norm_strength: 0.2
+  phase_corr_scale: 0.02
+  use_EI: true
+rails:
+  use_B: true
+  use_C: true
+reentry:
+  additive_nudge: 0.0
+  mode: threshold_phase
+resonator:
+  atoms_per_filter: 3
+  use_continuous_atoms: true
+  use_retention_maps: true
+train:
+  batch_size: 64
+  dataset: text
+  save_dir: runs/a_b_c_ei
+  steps: 400
